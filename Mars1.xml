@@ -18,22 +18,22 @@
                     <field name="NUM">100</field>
                   </block>
                 </value>
+                <next>
+                  <block type="led_select" id="76" inline="true">
+                    <field name="ACTION">FLASH</field>
+                    <value name="LED">
+                      <block type="math_number" id="91">
+                        <field name="NUM">3</field>
+                      </block>
+                    </value>
+                  </block>
+                </next>
               </block>
             </next>
           </block>
         </statement>
         <next>
-          <block type="led_select" id="76" inline="true">
-            <field name="ACTION">FLASH</field>
-            <value name="LED">
-              <block type="math_number" id="91">
-                <field name="NUM">3</field>
-              </block>
-            </value>
-            <next>
-              <block type="movement_stop" id="49"></block>
-            </next>
-          </block>
+          <block type="movement_stop" id="49"></block>
         </next>
       </block>
     </next>
